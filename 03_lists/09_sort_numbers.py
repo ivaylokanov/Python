@@ -1,3 +1,3 @@
-elements = input().split()
+elements = list(map(int,input().split()))
 elements.sort()
-print(" <= ".join(elements))
+print(" <= ".join(str(item) for item in elements))
