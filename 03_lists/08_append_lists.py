@@ -1,5 +1,5 @@
 sequence = input()
-tidy_sequence = sequence.replace(' ', '').split('|')
-if '' in tidy_sequence:
-    tidy_sequence.remove('')
-[print(' '.join(item), end=' ') for item in reversed(tidy_sequence)]
+tidy_sequence = sequence.split('|')
+tidy_sequence.reverse()
+tidy_sequence = [item.split() for item in tidy_sequence]
+[print(' '.join(item), end=' ') for item in tidy_sequence]
