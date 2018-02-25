@@ -1,5 +1,5 @@
 while True:
-    line = input()
+    line = str(input())
     state = ''
     if line == 'end':
         break
