@@ -5,7 +5,7 @@ find_index = 0
 list_lines = []
 for i in range(range_number):
     line = input()
-    list_lines.append(''.join(sorted(line)))
+    list_lines.append(line)
 for j in range(range_number):
     for ch in list_lines[j]:
         counter = 0
@@ -30,3 +30,5 @@ pyramid_shape = resulting_dictionary[pyramid_value]
 if pyramid_shape > 0:
     for i in range(pyramid_shape+2):
         print(pyramid_value * (i*2-1))
+else:
+    print(list_lines[5][-1])
